@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="rfxIcon.ico">
+    <title>Reflex Game</title>
+</head>
+<body>
+    <section>
+        <p class="title">REFLEX GAME</p>
+    </section>
+    <p id="gameOver"><strong>GAME OVER</strong></p>
+    <section id="grid" class="grid">
+        <div id="1" onclick="fieldClick(this.id)"><strong>1</strong></div>
+        <div id="2" onclick="fieldClick(this.id)"><strong>2</strong></div>
+        <div id="3" onclick="fieldClick(this.id)"><strong>3</strong></div>
+        <div id="4" onclick="fieldClick(this.id)"><strong>4</strong></div>
+        <div id="5" onclick="fieldClick(this.id)"><strong>5</strong></div>
+        <div id="6" onclick="fieldClick(this.id)"><strong>6</strong></div>
+        <div id="7" onclick="fieldClick(this.id)"><strong>7</strong></div>
+        <div id="8" onclick="fieldClick(this.id)"><strong>8</strong></div>
+        <div id="9" onclick="fieldClick(this.id)"><strong>9</strong></div>
+    </section>
+    <div id="starBtnDiv"> 
+        <button onclick="startNewGame()" id="startBtn" class="newGameBtn btn-style-global newGameBtn-animation-flash">New game</button>
+    </div>
+    <div id="result" class="sideSections"></div>
+    <div id="numberOfTries" class="sideSections"></div>
+    <button id="stopGameBtn" class="btn-style-global sideBtnStyles" onclick="stopGame()">STOP</button>
+    <button id="startNextGame" class="btn-style-global sideBtnStyles" onclick="startNextGame()">NEW GAME</button>
+    <script src="gameLogic.js" type="text/javascript"></script>
+</body>
+</html>
